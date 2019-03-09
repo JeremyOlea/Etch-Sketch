@@ -1,0 +1,27 @@
+.grid {
+    border: 5px rgb(220,20,60) solid;
+    width: 500px;
+    height: 500px;
+    display: grid;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 
+    / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-block {
+    background-color: rgb(220,220,220);
+    color: black;
+    border: 1px black solid;
+}
+
+.filled {
+    background-color: black;
+}
+
+h1 {
+    text-align: center
+}
