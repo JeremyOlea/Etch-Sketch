@@ -1,3 +1,7 @@
+:root {
+    --size: 20;
+}
+
 .grid {
     border: 5px rgb(220,20,60) solid;
     width: 500px;
@@ -8,8 +12,7 @@
     right: 0;
     left: 0;
     margin: auto;
-    grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 
-    / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template: repeat(var(--size), 1fr) / repeat(var(--size), 1fr)
 }
 
 .grid-block {
@@ -20,6 +23,15 @@
 
 .filled {
     background-color: black;
+}
+
+#reset{
+    text-align: center;
+    padding: 5px 24px;
+    height: 34px;
+    margin:0 auto;
+    margin-right: 10px;
+    float: left;
 }
 
 h1 {
